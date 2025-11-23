@@ -1,7 +1,9 @@
 {
-  "dependencies": {
-    "firebase": "^12.6.0",
-    "lucide-react": "^0.554.0",
-    "recharts": "^3.5.0"
+  "name": "investirsemsentimento",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "cd carteira-sem-sentimento && npm install",
+    "build": "cd carteira-sem-sentimento && npm run build",
+    "dev": "cd carteira-sem-sentimento && npm run dev"
   }
 }
