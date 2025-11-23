@@ -1,6 +1,5 @@
 {
-  "buildCommand": "cd carteira-sem-sentimento && npm run build",
-  "outputDirectory": "carteira-sem-sentimento/dist",
-  "installCommand": "cd carteira-sem-sentimento && npm install",
-  "framework": "vite"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install"
 }
