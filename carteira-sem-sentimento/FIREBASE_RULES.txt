@@ -1,0 +1,22 @@
+CONFIGURAÇÃO NECESSÁRIA NO FIREBASE CONSOLE
+============================================
+
+Acesse: https://console.firebase.google.com/project/carteirasemsentimento/firestore
+
+1. Vá em "Firestore Database" no menu lateral
+2. Clique em "Rules" (Regras)
+3. Cole estas regras:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /portfolios/{walletId} {
+      allow read, write: if true;
+    }
+  }
+}
+
+4. Clique em "Publicar" (Publish)
+
+⚠️ IMPORTANTE: Estas regras permitem leitura/escrita pública. 
+Para produção, adicione autenticação adequada!
